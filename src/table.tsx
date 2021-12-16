@@ -55,7 +55,7 @@ function TablePosts () {
         ...currentState,
         page: prevPage
       })
-      console.log('you are here!', list.length, 'page:', currentState.page);
+      // console.log('you are here!', list.length, 'page:', currentState.page);
     }  
   }
 
