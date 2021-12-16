@@ -11,7 +11,7 @@ function Home () {
   return (
   <Container>
     <div className="d-flex flex-row justify-content-between py-5">
-      <Button variant="outline-success" onClick={() => {navigate('/button')}}>Push the button</Button>
+      {/* <Button variant="outline-success" onClick={() => {navigate('/button')}}>Push the button</Button> */}
       <h3>New cool forum</h3>
       <Button onClick={() => {navigate('/create')}}>Create</Button>
     </div>         

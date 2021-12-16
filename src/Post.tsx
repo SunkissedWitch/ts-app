@@ -9,7 +9,7 @@ import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
-const API_URL = 'http://192.168.114.130:8000';
+const API_URL = 'http://178.151.207.216:8000';
 const MAX_INPUT_LENGTH: number = 500;
 const MIN_INPUT_LENGTH: number = 1;
 const HISTORY_BACK: number = -1;

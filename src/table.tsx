@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 import ReactPaginate from 'react-paginate';
 
 var _ = require('lodash');
-const API_URL = 'http://192.168.114.130:8000';
+const API_URL = 'http://178.151.207.216:8000';
 
 function TablePosts () {
   const [ currentState, setCurrentState]  = useState({
@@ -28,7 +28,7 @@ function TablePosts () {
   async function getData () {
     const { data: paginList, headers } = await axios.get(`${API_URL}/posts?_page=${current_page + 1}&_limit=${perPage}`);
     console.log('headers', headers['x-total-count'])
-    const allPosts = headers['x-total-count'];
+    const allPosts: number | string = headers['x-total-count'];
     
     if(!paginList && !allPosts) {
       console.log('no data');
